@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
@@ -18,8 +20,14 @@ class CustomCard extends StatelessWidget {
         children: <Widget>[
           ListTile(
             leading: cardIcon,
-            title: Text(cardTitle),
-            subtitle: Text(cardSubtitle),
+            title: Text(
+              cardTitle,
+              style: TextStyle(fontSize: 18),
+            ),
+            subtitle: Text(
+              cardSubtitle,
+              style: TextStyle(fontSize: 17),
+            ),
           ),
         ],
       ),
